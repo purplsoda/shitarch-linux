@@ -1,588 +1,299 @@
 shitarch-linux
 
-a arch linux remix designed specifically to make your life worse (we have benchmarked misery and achieved industry leading results)
+An Arch Linux remix designed specifically to make your life worse.
 
-shitarch-linux is a revolutionary next generation enterprise grade productivity reduction platform built on arch linux because apparently arch linux was not difficult enough already
+We benchmarked misery and achieved industry-leading results.
 
-our mission is simple: identify every single process that a computer can perform automatically and transfer responsibility for that process to the user, who is presumably unemployed and has unlimited time
+shitarch-linux is a revolutionary, next-generation, enterprise-grade productivity-reduction platform built on Arch Linux, because apparently Arch Linux was not difficult enough already.
 
-the user can create their own automations but we will somehow make it so its only possible if the automation is written in asm because using python to rename a file is apparently a threat to national security
+Our mission is simple: identify every process a computer can perform automatically and transfer responsibility for it to the user, who is presumably unemployed and has unlimited free time.
 
-we have taken the KISS principle and improved it by removing the simplicity entirely
+Automation is temporary. Manual suffering is forever.
 
-we call this 逆向 productivity
+⸻
 
-stupid functions (industry leading improvements)
+Features
 
-1. filesystem naming improvements
+* UUID-only filenames — document.txt is deprecated. Your essay is now 550e8400-e29b-41d4-a716-446655440000.
+* Manual boot orchestration — each boot stage requires user approval. The computer will not start until you confirm that you want the computer to start.
+* Verbose commands — ls has been replaced with list-the-contents-of-the-current-directory-and-explain-why-you-need-them.
+* Privilege elevation — sudo is gone. Commands now end in -as-a-superuser, because brevity is a privilege.
+* Dependency management — every package dependency must be reviewed, approved, signed, printed, scanned, and faxed to the kernel.
+* Manual memory management — a graphical interface lets you approve every simulated memory allocation. Actual memory management remains the kernel’s job; we are evil, not incompetent.
+* Assembly-first philosophy — shell scripts are considered an admission of defeat.
+* Cryptographic authentication — passwords are replaced by a SHA-512-themed challenge-response ceremony. The ceremony adds no security; it adds paperwork.
+* Vague error messages — the system knows what went wrong. You don’t deserve to.
+* Clipboard governance — every copy-and-paste operation requires a permit.
+* Timekeeping by committee — the clock asks the user what time it is.
+* KDE configuration decentralisation — every setting is stored in a different directory, including settings that do not exist.
 
-human readable filenames are a legacy technology developed by people who believed computers should be understandable
+⸻
 
-we have eliminated this limitation
+Example commands
 
-every file and directory is identified exclusively by a UUID
+Want to list files?
 
-$ list-files-and-directories-in-selected-directory
-a7f93d2c-84b1-4e6f-9a2d-73c8e41b5f06
-c1b72a90-5d3e-48f1-b604-9a7c2e83d145
-8e3f0b71-2a94-46cd-b815-5d7a9c20e634
+list-the-contents-of-the-current-directory-and-explain-why-you-need-them
 
-which one is your homework?
+Want to install a package?
 
-you will remember
+request-package-installation \
+  --explain-your-intentions \
+  --obtain-three-approvals \
+  --print-the-dependency-tree \
+  --wait-for-the-next-business-day
 
-you must remember
+Want to become root?
 
-the filesystem remembers nothing about your emotional attachment to homework-final-FINAL-v7-reallyfinal.txt
+whoami-as-a-superuser
 
-that file is dead
+Want to shut down?
 
-it has been reborn as d4a1c9e2-7f63-4b80-a251-9e6d3c7f1048
+begin-the-multi-stage-computer-termination-procedure
 
-the user is encouraged to memorise every UUID using traditional biological storage methods
+Expected output:
 
-if you forget a UUID, you may search for it manually by opening every directory recursively and inspecting every file individually
+Stage 1/47: Confirm shutdown.
+Stage 2/47: Confirm that you confirmed shutdown.
+Stage 3/47: Explain why shutdown is necessary.
+Stage 4/47: Your explanation has been rejected.
+Stage 5/47: Please restart the shutdown procedure.
 
-this process has been optimised by removing the search function
+⸻
 
-we call this cognitive offloading reversal
+Error messages
 
-2. super efficient boot
+Traditional operating systems explain errors. shitarch-linux believes explanations create unrealistic expectations.
 
-we have decided the arch linux boot process is too slow so instead the user will dictate the boot speed by manually executing every process
+Error	Meaning
+Something happened.	Something happened.
+Operation completed unsuccessfully.	The operation failed.
+Unable to continue at this time.	No.
+The requested thing is not available.	We misplaced it.
+A condition was encountered.	A condition exists.
+Please try again later.	We have no idea.
+The system has considered your request.	Rejected.
+An unexpected expected condition occurred.	We knew this would happen.
+Error: error.	Error.
+Success: operation failed.	The reporting subsystem has also failed.
+The issue may or may not be related.	We are guessing.
+Please consult the documentation.	The documentation says to consult the documentation.
 
-every boot stage must be executed in the correct order and in time
+Realistic example
 
-BOOT SEQUENCE INITIALISED
-00:00.000  LOCATE FIRMWARE
-00:00.250  IDENTIFY BOOTLOADER
-00:00.500  LOAD KERNEL
-00:00.750  INITIALISE INITRAMFS
-00:01.000  MOUNT ROOT FILESYSTEM
-00:01.250  START SYSTEMD
-PRESS ENTER ON BEAT
-TOO EARLY
-TOO LATE
-UNKNOWN
+$ pacman -S firefox
+shitarch-package-manager 0.0.1
+Resolving dependencies...
+Dependency resolution has encountered a dependency-related condition.
+The condition may be caused by:
+  - A missing dependency
+  - An existing dependency
+  - A dependency that has not yet been invented
+  - An unrelated event
+Installation aborted.
+No further information is available.
+Please consult the documentation.
+Documentation error: documentation unavailable.
+Please consult the documentation.
 
-the computer now functions like a rhythm game designed by someone who considers 60 BPM to be an advanced mathematical concept
+⸻
 
-miss one deadline and the sequence restarts
+The filesystem
 
-execute one stage out of order and the sequence restarts
+Files are no longer organised by folders. Instead, the filesystem uses a revolutionary flat architecture.
 
-successfully complete every stage and the system informs you that the deadline was missed
+Every file is stored at the root of the filesystem and identified by a UUID.
 
-we call this deterministic suffering scheduling
+Example:
 
-the actual kernel still handles real boot operations internally because we have limits (they are somewhere between our moral standards and our available development time)
+/
+├── 0f8fad5b-d9cb-469f-a165-70867728950e
+├── 16fd2706-8baf-433b-82eb-8c7fada847da
+├── 550e8400-e29b-41d4-a716-446655440000
+└── 6ba7b810-9dad-11d1-80b4-00c04fd430c8
 
-3. command naming improvements
+File extensions are prohibited because the filesystem should not be expected to understand your intentions.
 
-unix commands are too short
+To open a file, you must first identify it, prove ownership, submit a request, and explain why you did not simply memorise its UUID.
 
-ls contains two characters
+⸻
 
-two
+Package management
 
-we have therefore replaced it with the following enterprise-grade interface
+The package manager has been redesigned around the principle that installing software should take longer than writing it.
 
-list-files-and-directories-in-selected-directory
+Each package installation requires:
 
-want to list files recursively?
+1. A dependency tree inspection.
+2. A manual review of every dependency.
+3. A signed declaration of intended use.
+4. Three approvals from unrelated users.
+5. A reboot to apply the approval.
+6. A second reboot because the first reboot invalidated the approval.
 
-list-files-and-directories-in-selected-directory-in-a-recursive-manner
+Example:
 
-want hidden files?
-
-list-files-and-directories-in-selected-directory-including-hidden-files
-
-want both?
-
-list-files-and-directories-in-selected-directory-including-hidden-files-in-a-recursive-manner
-
-want detailed output?
-
-list-files-and-directories-in-selected-directory-including-hidden-files-in-a-recursive-manner-while-displaying-file-permissions-ownership-size-and-other-information-that-will-be-used-by-absolutely-nobody
-
-we have replaced command flags with complete English descriptions because apparently -r was an unacceptable compression ratio
-
-the command parser requires every word to be spelled correctly
-
-a typo in character 193 causes the entire command to fail
-
-COMMAND REJECTED
-Your command was 246 characters long.
-Expected: 247 characters.
-We are sorry for the inconvenience.
-Error code: 1
-
-we call this verbose interface optimisation
-
-4. privilege escalation improvements
-
-sudo is far too short
-
-it is also too easy to type without thinking about the consequences
-
-we have replaced it with suffix-based privilege declaration
-
-instead of
-
-sudo pacman -Syu
-
-the user must execute
-
-update-the-entire-operating-system-and-all-installed-packages-as-a-superuser
-
-every privileged operation must end with -as-a-superuser
-
-forget the suffix and the command fails
-
-type the suffix incorrectly and the command asks whether you intended to perform the operation as a non-privileged user
-
-answer yes and the operation fails
-
-answer no and the operation fails
-
-we call this privilege awareness through repeated disappointment
-
-5. password security improvements
-
-passwords are insecure because people can remember them
-
-shitarch-linux has therefore introduced SHA-512 credential entry
-
-AUTHENTICATION REQUIRED
-Please enter the 128-character hexadecimal SHA-512 digest
-of your password.
-> ________________________________________________
-AUTHENTICATION FAILED
-Reason: the provided credential was not sufficiently credential-like.
-
-the system uses a challenge-response protocol so that a captured hash cannot simply be replayed as a password
-
-the challenge-response client must be written in assembly before the user can log in
-
-we call this cryptographic inconvenience as a service
-
-security researchers have described the interface as unnecessarily complicated
-
-we have interpreted this as a positive security audit
-
-6. manual memory management
-
-automatic memory management hides the physical reality of RAM
-
-we have therefore introduced a human-in-the-memory-loop interface
-
-every application must submit a formal request for memory allocation
-
-MEMORY ALLOCATION REQUEST 000001
-Application: Dolphin
-Requested memory: 384 MiB
-Available memory: 7,421 MiB
-Please identify the physical pages to allocate.
-Selected pages: 0
-Required pages: 98,304
-Would you like to continue?
-[Y] yes
-[N] no
-[M] manually inspect every page
-
-selecting M opens a list of physical pages
-
-the list contains approximately eight million entries on a sufficiently large machine
-
-we believe that the user should understand exactly what the computer is doing before opening a file manager
-
-the kernel still manages physical memory internally because manually handling real page tables from a desktop application would be a security and stability disaster
-
-we are evil, not responsible for kernel-level memory corruption
-
-7. package management improvements
-
-pacman is too efficient
-
-dependency resolution is now a human resources department
-
-PACKAGE INSTALLATION REQUEST
 Package: firefox
-Direct dependencies: 87
-Transitive dependencies: 642
-Dependency review required.
-Approve dependency 1 of 729?
-[Y] approve
-[N] reject
-[W] why does this exist
+Dependencies: 184
+Review dependency 1/184? [y/N]
+Review dependency 2/184? [y/N]
+Review dependency 3/184? [y/N]
+...
+Review dependency 184/184? [y/N]
+All dependencies reviewed.
+Approval expired during review.
+Restarting dependency review...
 
-selecting W opens the documentation
+The package manager is technically correct. You did agree to review every dependency.
 
-the documentation requires another package
+⸻
 
-that package requires another package
+Networking
 
-the user is now reviewing the dependency tree of the documentation required to understand the dependency tree
+NetworkManager has been replaced by NetworkNegotiator, a tool that negotiates with your network instead of connecting to it.
 
-we call this recursive dependency enlightenment
+$ connect-to-wifi
+Scanning for networks...
+Network found.
+Requesting permission to request permission to connect...
+Permission denied.
+Reason: insufficient permission to request permission.
+Would you like to retry? [y/N]
 
-if the installation succeeds, the system displays:
+DHCP is disabled by default. Users must manually negotiate an IP address with the router.
 
-TRANSACTION COMPLETED
-The requested package has been installed.
-However, one dependency was not reviewed.
-Please reinstall the package to continue.
+DNS resolution requires the user to explain why a domain name deserves to be resolved.
 
-8. vague error message improvements
+⸻
 
-traditional error messages explain what happened
+Desktop environment
 
-we have removed this unnecessary information
+KDE Plasma is supported, but the wallpaper is not loaded until the user manually confirms that the desktop should have a background.
 
-all error messages are now generated by our proprietary ambiguity engine
+Loading desktop...
+Panels: loaded
+Widgets: loaded
+Wallpaper: awaiting authorisation
+Window manager: uncertain
+Desktop: mostly present
 
-ERROR 1
-Something happened.
-ERROR 2
-Something else happened.
-ERROR 3
-The previous thing may have caused the current thing.
-ERROR 4
-Operation unsuccessful.
-Please ensure that the operation is operating correctly.
-ERROR 5
-Unexpected expected behaviour detected.
-ERROR 6
-The system could not determine whether the system was able to determine the requested determination.
-ERROR 7
-Success.
-Unfortunately, the operation failed.
-ERROR 8
-An error occurred while attempting to report an error.
-The original error may or may not have occurred.
-ERROR 9
-Error resolving error.
-The error resolver returned an error while resolving the error that occurred during error resolution.
-Please resolve the error.
-ERROR 10
-The operation completed with status: maybe.
+Every configuration setting is stored in a different file. Some settings are stored in files that are generated only after you change the setting.
 
-our flagship error is:
+Changing a setting requires restarting the relevant component, the desktop session, and occasionally the computer’s entire existence.
 
-FATAL ERROR
-Something has gone wrong.
-We know what it is.
-We cannot tell you.
-Have a nice day.
+⸻
 
-we call this context-free diagnostic transparency
+Clipboard management
 
-9. networking improvements
+Copying text requires a clipboard permit.
 
-DHCP is an unacceptable loss of user autonomy
+$ copy "hello world"
+Clipboard request submitted.
+Waiting for approval...
+Approval granted.
+Clipboard contents have changed.
+Warning: clipboard contents are no longer available.
+Reason: clipboard retention policy.
 
-the user must manually configure the IP address, subnet mask, default gateway, DNS resolver, routing table, interface parameters and every other setting that might conceivably be required for networking
+The clipboard clears itself after 0.7 seconds to encourage users to type faster.
 
-NETWORK CONFIGURATION
-IP address: required
-Subnet mask: required
-Gateway: required
-DNS resolver: required
-Network status: not available
-Reason: network configuration incomplete
-To configure the network, please access the network configuration utility.
-The network configuration utility requires an active network connection.
+⸻
 
-we call this offline-first networking
+Timekeeping
 
-the internet is available only after the user has successfully completed the configuration process
+The system clock does not synchronise with network time servers. It asks the user.
 
-we have therefore ensured that nobody can access the documentation required to configure the internet
+Current time is unknown.
+Please enter the current time:
+> 14:32
+Time accepted.
+Warning: the supplied time may be inaccurate.
+Please enter the current time again.
 
-10. graphical interface improvements
+Leap seconds require a full system reboot and a signed statement from the user confirming that the Earth has rotated unexpectedly.
 
-KDE Plasma is too convenient
+⸻
 
-we have therefore introduced several enterprise-grade enhancements
+Security
 
-* the desktop wallpaper is stored under a UUID
-* the login screen uses a separate theme configuration system
-* the lock screen uses a different configuration system
-* changing the wallpaper requires restarting the appropriate service
-* restarting the appropriate service requires consulting the documentation
-* the documentation requires opening a browser
-* the browser requires a working desktop environment
+shitarch-linux takes security seriously, mostly by making everything inconvenient.
 
-we call this cross-component integration through intentional fragmentation
+* Password changes require a reboot.
+* Logging in requires explaining why you want to log in.
+* Failed authentication messages do not reveal whether authentication failed.
+* Root access requires a written justification.
+* Security updates require manual approval of every changed file.
+* The firewall blocks all incoming and outgoing connections, including the connection needed to configure the firewall.
 
-the login screen and lock screen are now guaranteed to look completely different
+The default security posture is nothing works, therefore nothing can go wrong.
 
-consistency is a form of complacency
+⸻
 
-11. clipboard improvements
+Performance benchmarks
 
-copying and pasting is too easy
+All results are independently verified by the shitarch-linux Benchmarking Department.
 
-we have replaced the clipboard with a manually managed text transfer interface
+Task	Conventional Linux	shitarch-linux
+Boot time	8 seconds	47 minutes
+Install Firefox	20 seconds	3 business days
+Copy a file	0.01 seconds	14 approval stages
+Connect to Wi-Fi	2 seconds	Pending negotiation
+Shut down	3 seconds	User confirmation required
+Experience joy	Possible	Unsupported
 
-copying text requires the user to acknowledge the transfer
+Benchmarks were conducted on a computer that refused to boot during testing.
 
-pasting text requires the user to acknowledge the receipt
+⸻
 
-CLIPBOARD TRANSFER REQUEST
-Source: Application A
-Destination: Application B
-Transfer payload: 14 characters
-Do you authorise the transfer of this payload?
-[Y] yes
-[N] no
+Internationalisation
 
-if the transfer contains Unicode characters, the user must acknowledge the encoding
+shitarch-linux supports multiple languages, primarily because the developers accidentally pasted characters from several Unicode tables into the source code.
 
-if the transfer contains emoji, the user must acknowledge that the characters may occupy multiple bytes
+Occasionally, a phoneme is replaced with a vaguely similar symbol from another writing system. A tiny fraction of words may also be replaced with Chinese characters of approximately equivalent meaning.
 
-if the transfer contains a newline, the user must acknowledge the existence of line endings
+This feature is called Unicode-based productivity reduction.
 
-we call this data sovereignty
+Example:
 
-12. update management improvements
+The 系统 is unable to continue.
+Please confirm the operation 𐓘gain.
 
-automatic updates are a threat to user engagement
+No linguists were consulted.
 
-every update must be manually approved
+No linguists will be consulted.
 
-UPDATE AVAILABLE
-Packages to upgrade: 1,284
-Review package 1/1284?
+⸻
 
-after reviewing every package, the user must approve the review
+Frequently asked questions
 
-after approving the review, the user must confirm the approval
+Is this actually a Linux distribution?
 
-after confirming the approval, the user must confirm that the confirmation was intentional
+Not yet. It is currently a conceptual parody of Arch Linux and excessive system complexity.
 
-after confirming that the confirmation was intentional, the system asks whether the user would like to postpone the update
+Why not use a normal operating system?
 
-selecting yes postpones the update
+Normal operating systems are designed to save time. This is a design flaw.
 
-selecting no asks whether the user is sure
+Is it suitable for beginners?
 
-we call this change management maturity
+Absolutely not. It is also unsuitable for experts, intermediate users, and anyone who has ever wanted their computer to work.
 
-13. timekeeping improvements
+Can I contribute?
 
-system clocks are too automatic
+Yes. Please submit a pull request, print it, sign it, scan it, and mail it to the maintainers.
 
-the user must periodically confirm the current time
+Why is it called shitarch-linux?
 
-TIME SYNCHRONISATION REQUEST
-System time: unknown
-Actual time: unknown
-Enter the correct time:
-> __:__:__
-Thank you.
-The supplied time differs from the system time.
-Please correct the system time.
+We considered arch-linux-but-worse, but the domain was taken by reality.
 
-NTP remains available but requires manual approval for every synchronisation attempt
+⸻
 
-we call this temporal accountability
+Design philosophy
 
-14. documentation improvements
+Any process that can be automated should be made manual.
 
-man pages are too informative
+Any process that is already manual should be made more complicated.
 
-every manual references another manual
+Any process that cannot be made more complicated should be documented until it becomes impossible to understand.
 
-$ man shitarch
-SEE ALSO:
-shitarch-config(7)
-$ man shitarch-config
-SEE ALSO:
-shitarch(1)
-
-the user is encouraged to explore the documentation indefinitely
-
-the loop is not a bug
-
-the loop is an educational journey
-
-we call this circular knowledge management
-
-15. shell improvements
-
-command completion is disabled
-
-aliases are disabled
-
-history is disabled
-
-the prompt does not display the current directory
-
-the prompt does not display the username
-
-the prompt does not display the hostname
-
-the prompt does not display whether the last command succeeded
-
-we call this minimalist situational awareness
-
-the terminal prompt is now:
-
->
-
-this represents the user’s relationship with the operating system
-
-16. printer improvements
-
-printers are already difficult to use
-
-we have decided to improve the process by requiring users to configure the print queue manually
-
-before printing a document, the user must confirm:
-
-* the printer exists
-* the printer is connected
-* the printer has paper
-* the printer has ink
-* the printer understands the document
-* the document understands the printer
-* the printer has acknowledged the existence of the document
-
-PRINT REQUEST FAILED
-Reason: printer communication unsuccessful.
-Printer status: available.
-Document status: available.
-Communication status: unavailable.
-Please ensure that all components are communicating correctly.
-
-we call this physical document orchestration
-
-17. file deletion improvements
-
-deleting files is too easy
-
-the user must submit a deletion request containing the target UUID, inode number, file size and a written justification
-
-DELETION REQUEST
-Target: 8e3f0b71-2a94-46cd-b815-5d7a9c20e634
-Reason for deletion: required
-Are you certain? [Y/N]
-Are you certain that you are certain? [Y/N]
-Would you like to reconsider your certainty? [Y/N]
-
-the file is then moved into a recycle directory
-
-the recycle directory has a UUID
-
-the UUID is not displayed
-
-we call this reversible deletion management
-
-18. user account improvements
-
-creating a user account requires the user to create another user account
-
-the second account is responsible for authorising the first account
-
-the first account must then authorise the second account
-
-the two accounts cannot log in until they have both been authorised
-
-we call this distributed identity verification
-
-19. shutdown improvements
-
-shutting down the computer is too simple
-
-the user must first request permission to terminate the current session
-
-SHUTDOWN REQUEST
-Active processes: 47
-Terminate all active processes?
-[Y] yes
-[N] no
-
-selecting yes opens a second confirmation
-
-selecting no returns to the desktop
-
-selecting yes again asks whether the user would like to save their work
-
-selecting yes opens a file manager
-
-the file manager requires a functioning desktop environment
-
-we call this graceful termination governance
-
-performance benchmarks
-
-we conducted a completely objective benchmark using a stopwatch, a spreadsheet and an individual who was not permitted to leave the room
-
-Operation	Normal Arch	shitarch-linux
-Open file manager	0.4 seconds	14 minutes
-List files	0.01 seconds	23 seconds
-Install package	15 seconds	2 hours
-Change wallpaper	3 seconds	47 minutes
-Configure networking	30 seconds	3 business days
-Delete a file	1 second	12 confirmation dialogs
-Read an error message	2 seconds	Still investigating
-Boot desktop	8 seconds	Deadline exceeded
-Regret installation	Immediate	Before installation
-
-the results demonstrate a 400% improvement in user engagement
-
-we cannot disclose the methodology because the benchmark script is written in assembly and its author has forgotten the UUID of the source file
-
-known issues
-
-* users report that the operating system is inconvenient
-* users report that commands are too long
-* users report that error messages contain insufficient information
-* users report that they cannot find their files
-* users report that the system requires too much manual configuration
-* users report that updates take too long
-* users report that the computer is technically functional but spiritually hostile
-
-all issues have been classified as expected behaviour
-
-users who report these issues will be automatically enrolled in our advanced inconvenience programme
-
-design philosophy
-
-1. if something can be automated make it manual
-2. if something can be simplified make it complicated
-3. if something works perfectly do not touch it because it is probably the only thing keeping the system operational
-4. if the user complains, rebrand the complaint as a feature
-5. if a feature is too difficult to explain, call it enterprise grade
-6. if a command is too long, add more words
-7. if an error is too vague, remove another noun
-8. if the system is broken, inform the user that the system is operating within expected parameters
-
-we call this continuous inconvenience delivery
-
-final statement
-
-shitarch-linux is not an operating system
-
-it is a prolonged negotiation between a human being and a machine that has decided to become a middle manager
-
-we have successfully transformed a computer from a tool into a full-time administrative responsibility
-
-the rock remains faster to boot
-
-the rock does not require dependencies
-
-the rock does not need a desktop environment
-
-the rock does not ask you to confirm that you confirmed the confirmation
-
-the rock is also not compatible with KDE Plasma
-
-we are working on it
-
-(estimated completion date: unknown)
-
-(estimated reason: something happened)
-
-shitarch-linux — making computers worse, one unnecessary abstraction at a time.
+shitarch-linux: because your computer should be a full-time job.
