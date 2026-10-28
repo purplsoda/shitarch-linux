@@ -116,6 +116,12 @@ File extensions are prohibited because the filesystem should not be expected to 
 
 To open a file, you must first identify it, prove ownership, submit a request, and explain why you did not simply memorise its UUID.
 
+Here at shitarch linux, we believe the user must train their biology to work with such and efficient operating system
+
+Because of this, the UUID of files will randomly shuffle every boot to allow the user to adapt to predicting RNG calculations
+
+RNG will also be used to add the `.probably` ending to random files to further strengthen the users ability to predict RNG calculations
+
 ⸻
 
 Package management
