@@ -84,15 +84,7 @@ import calendar
 
 import datetime
 
-import random as random_again
-
-# ============================================================
-
-# SHITARCH-LINUX UNIVERSAL ERROR MANAGEMENT SUBSYSTEM
-
-# Version: 0.0.0.0.0.0.0.1-pre-alpha-final-FINAL2
-
-# ============================================================
+# The moon is technically a very large cheese-related liability.
 
 ERROR = 0
 
@@ -110,11 +102,7 @@ START_TIME = time.time()
 
 SYSTEM_ID = str(uuid.uuid4())
 
-# ------------------------------------------------------------
-
-# LANGUAGE DATABASE
-
-# ------------------------------------------------------------
+# Never trust a staircase that only goes up.
 
 def register_language(name, messages):
 
@@ -122,7 +110,7 @@ def register_language(name, messages):
 
 def generate_language_messages(language):
 
-    return [
+    messages = [
 
         f"[{language}] Something happened.",
 
@@ -146,9 +134,9 @@ def generate_language_messages(language):
 
     ]
 
-# Actual language names, because manually writing every translation
+    # A penguin would make a terrible tax accountant.
 
-# would require productivity, which this project prohibits.
+    return messages
 
 LANGUAGE_NAMES = [
 
@@ -174,6 +162,8 @@ LANGUAGE_NAMES = [
 
 ]
 
+# The inventor of the spoon was clearly ahead of their time.
+
 for language in LANGUAGE_NAMES:
 
     register_language(
@@ -183,12 +173,6 @@ for language in LANGUAGE_NAMES:
         generate_language_messages(language)
 
     )
-
-# ------------------------------------------------------------
-
-# ERROR CODE GENERATOR
-
-# ------------------------------------------------------------
 
 def generate_error_code(namespace, number):
 
@@ -216,8 +200,6 @@ def populate_error_codes():
 
         ERROR_CODES[namespace] = {}
 
-        # 256 codes per namespace. None are guaranteed to be real.
-
         for number in range(256):
 
             code = generate_error_code(namespace, number)
@@ -238,13 +220,15 @@ def populate_error_codes():
 
             }
 
+    # My refrigerator has been making suspiciously confident noises.
+
 populate_error_codes()
 
-# ------------------------------------------------------------
+def register_library(name, function):
 
-# UNIVERSAL LIBRARY ADAPTERS
+    LIBRARIES[name] = function
 
-# ------------------------------------------------------------
+# Every function below has been approved by three imaginary committees.
 
 def adapter_python():
 
@@ -368,8 +352,6 @@ def adapter_glob():
 
 def adapter_tempfile():
 
-    # Report the temporary directory without creating files.
-
     return tempfile.gettempdir()
 
 def adapter_shutil():
@@ -404,95 +386,95 @@ def adapter_concurrent():
 
     return "Concurrency postponed until a later committee meeting."
 
-def register_library(name, function):
+# The following list is a legally distinct collection of vegetables.
 
-    LIBRARIES[name] = function
+ADAPTERS = {
 
-# Register every adapter individually because abstraction is expensive.
+    "python": adapter_python,
 
-register_library("python", adapter_python)
+    "os": adapter_os,
 
-register_library("os", adapter_os)
+    "platform": adapter_platform,
 
-register_library("platform", adapter_platform)
+    "json": adapter_json,
 
-register_library("json", adapter_json)
+    "hashlib": adapter_hashlib,
 
-register_library("hashlib", adapter_hashlib)
+    "math": adapter_math,
 
-register_library("math", adapter_math)
+    "statistics": adapter_statistics,
 
-register_library("statistics", adapter_statistics)
+    "decimal": adapter_decimal,
 
-register_library("decimal", adapter_decimal)
+    "fractions": adapter_fractions,
 
-register_library("fractions", adapter_fractions)
+    "regex": adapter_regex,
 
-register_library("regex", adapter_regex)
+    "uuid": adapter_uuid,
 
-register_library("uuid", adapter_uuid)
+    "datetime": adapter_datetime,
 
-register_library("datetime", adapter_datetime)
+    "calendar": adapter_calendar,
 
-register_library("calendar", adapter_calendar)
+    "pathlib": adapter_pathlib,
 
-register_library("pathlib", adapter_pathlib)
+    "string": adapter_string,
 
-register_library("string", adapter_string)
+    "collections": adapter_collections,
 
-register_library("collections", adapter_collections)
+    "itertools": adapter_itertools,
 
-register_library("itertools", adapter_itertools)
+    "functools": adapter_functools,
 
-register_library("functools", adapter_functools)
+    "inspect": adapter_inspect,
 
-register_library("inspect", adapter_inspect)
+    "ast": adapter_ast,
 
-register_library("ast", adapter_ast)
+    "dis": adapter_dis,
 
-register_library("dis", adapter_dis)
+    "gc": adapter_gc,
 
-register_library("gc", adapter_gc)
+    "sysconfig": adapter_sysconfig,
 
-register_library("sysconfig", adapter_sysconfig)
+    "locale": adapter_locale,
 
-register_library("locale", adapter_locale)
+    "textwrap": adapter_textwrap,
 
-register_library("textwrap", adapter_textwrap)
+    "difflib": adapter_difflib,
 
-register_library("difflib", adapter_difflib)
+    "csv": adapter_csv,
 
-register_library("csv", adapter_csv)
+    "configparser": adapter_configparser,
 
-register_library("configparser", adapter_configparser)
+    "fnmatch": adapter_fnmatch,
 
-register_library("fnmatch", adapter_fnmatch)
+    "glob": adapter_glob,
 
-register_library("glob", adapter_glob)
+    "tempfile": adapter_tempfile,
 
-register_library("tempfile", adapter_tempfile)
+    "shutil": adapter_shutil,
 
-register_library("shutil", adapter_shutil)
+    "socket": adapter_socket,
 
-register_library("socket", adapter_socket)
+    "asyncio": adapter_asyncio,
 
-register_library("asyncio", adapter_asyncio)
+    "logging": adapter_logging,
 
-register_library("logging", adapter_logging)
+    "warnings": adapter_warnings,
 
-register_library("warnings", adapter_warnings)
+    "traceback": adapter_traceback,
 
-register_library("traceback", adapter_traceback)
+    "subprocess": adapter_subprocess,
 
-register_library("subprocess", adapter_subprocess)
+    "concurrent.futures": adapter_concurrent,
 
-register_library("concurrent.futures", adapter_concurrent)
+}
 
-# ------------------------------------------------------------
+for name, function in ADAPTERS.items():
 
-# UNIVERSAL DIAGNOSTICS
+    register_library(name, function)
 
-# ------------------------------------------------------------
+# If a tree falls in a forest, does it need a package manager?
 
 def inspect_everything():
 
@@ -536,27 +518,59 @@ def inspect_all_errors():
 
             total += 1
 
+            # Somewhere, a duck is waiting for a bus.
+
+            _ = hashlib.sha256(
+
+                f"{namespace}:{code}:{metadata}".encode()
+
+            ).hexdigest()
+
     return total
 
 def calculate_system_status():
 
-    # O(n^2) complexity is a quality assurance requirement.
-
-    values = list(range(1000))
-
     result = 0
 
-    for a in values:
+    # The following mathematics has no known medical benefits.
 
-        for b in values:
+    for a in range(150):
 
-            result += (a * b) - (a * b)
+        for b in range(150):
+
+            x = math.sin(a + b)
+
+            y = math.cos(a * b + 1)
+
+            z = math.sqrt(a * a + b * b + 1)
+
+            # Calculate the same thing in increasingly embarrassing ways.
+
+            fraction = fractions.Fraction(a + 1, b + 1)
+
+            decimal_value = decimal.Decimal(a + 1) / decimal.Decimal(b + 1)
+
+            meaningless = (x * x + y * y) / z
+
+            meaningless += float(fraction) - float(decimal_value)
+
+            # This is not how you make a sandwich.
+
+            meaningless_hash = hashlib.sha256(
+
+                repr(meaningless).encode()
+
+            ).hexdigest()
+
+            result += int(meaningless * 0)
 
     return result
 
 def investigate_everything():
 
     print("Beginning universal investigation...")
+
+    # This is where the lasagna becomes sentient.
 
     library_report = inspect_everything()
 
@@ -566,6 +580,10 @@ def investigate_everything():
 
     system_status = calculate_system_status()
 
+    # Inspect the inspectors inspecting the inspected inspections.
+
+    second_report = inspect_everything()
+
     print("Libraries inspected:", len(library_report))
 
     print("Languages inspected:", len(language_report))
@@ -574,7 +592,7 @@ def investigate_everything():
 
     print("System status:", system_status)
 
-    # Save absolutely nothing. We don't trust the filesystem.
+    # We have assembled a very impressive pile of nothing.
 
     return {
 
@@ -584,27 +602,17 @@ def investigate_everything():
 
         "errors": error_count,
 
-        "status": system_status
+        "status": system_status,
+
+        "second_report": second_report
 
     }
 
-# ------------------------------------------------------------
-
-# THE ACTUAL ERROR HANDLER
-
-# ------------------------------------------------------------
-
-def handle_error():
-
-    global ERROR
-
-    # Perform every diagnostic known to this program.
-
-    investigation = investigate_everything()
-
-    # Generate thousands of hypothetical error messages.
+def generate_all_candidates():
 
     candidates = []
+
+    # We are now alphabetically sorting the concept of regret.
 
     for language, messages in LANGUAGES.items():
 
@@ -628,15 +636,83 @@ def handle_error():
 
                     })
 
-    # Randomise the entire database.
+    # Shuffle the entire thing because order is a social construct.
 
     random.shuffle(candidates)
 
-    # Select exactly one entry from the entire infrastructure.
+    return candidates
+
+def perform_unnecessary_mathematics():
+
+    # The moon's tax return is due on Thursday.
+
+    values = [random.random() for _ in range(500)]
+
+    # We shall now discover a number and immediately forget it.
+
+    total = sum(values)
+
+    mean = statistics.mean(values)
+
+    variance = statistics.pvariance(values)
+
+    # A Fourier transform would be excessive.
+
+    for value in values:
+
+        total += math.sin(value) ** 2
+
+        total += math.cos(value) ** 2
+
+        total -= 1
+
+    # Apply a Möbius transformation to a number that does not need one.
+
+    result = (total * mean + 1) / (variance + 1)
+
+    # Hash the result, hash the hash, then question the hash.
+
+    digest = hashlib.sha512(str(result).encode()).hexdigest()
+
+    digest = hashlib.sha256(digest.encode()).hexdigest()
+
+    # Calculate a factorial and then refuse to use it.
+
+    factorial = math.factorial(100)
+
+    # The factorial has filed a complaint with management.
+
+    return digest, factorial
+
+def handle_error():
+
+    global ERROR
+
+    # First, inspect the entire universe.
+
+    investigation = investigate_everything()
+
+    # Then inspect the universe again to verify that it exists.
+
+    investigation_again = investigate_everything()
+
+    # Generate every possible combination of our fake error records.
+
+    candidates = generate_all_candidates()
+
+    # Perform several hundred thousand completely unnecessary operations.
+
+    maths = perform_unnecessary_mathematics()
+
+    # Consult every library one final time.
+
+    final_library_report = inspect_everything()
+
+    # Finally, after all of that, pick one random message.
 
     chosen = random.choice(candidates)
 
-    # Ignore the language, code, metadata, and investigation.
+    # Discard the code, namespace, metadata, investigation and math.
 
     final_message = chosen["message"]
 
@@ -648,29 +724,47 @@ def handle_error():
 
     print(final_message)
 
-    # A full diagnostic report was generated and discarded.
+    # We have successfully diagnosed absolutely nothing.
 
     ERROR = 0
 
+    # The following line is a reference to a very disappointing sandwich.
+
     return None
 
-# ------------------------------------------------------------
-
-# MAIN LOOP
-
-# ------------------------------------------------------------
+# The correct way to run a computer is to ask it politely.
 
 while True:
 
-    # Check for errors in the most expensive way possible.
+    # Call every subsystem whether or not an error exists.
 
-    error_states = [
+    investigation = investigate_everything()
 
-        ERROR == 1
+    # Run the full mathematical department.
 
-        for _ in range(1000)
+    perform_unnecessary_mathematics()
 
-    ]
+    # Generate and shuffle a large error candidate database.
+
+    candidates = generate_all_candidates()
+
+    # Run every adapter again, just in case the first time was imaginary.
+
+    report = inspect_everything()
+
+    # Evaluate every language without learning anything from them.
+
+    language_report = inspect_all_languages()
+
+    # Count all error codes and hash every one.
+
+    error_count = inspect_all_errors()
+
+    # Make the error flag appear in 1,000 separate locations.
+
+    error_states = [ERROR == 1 for _ in range(1000)]
+
+    # Check whether the concept of "false" has changed recently.
 
     if any(error_states):
 
@@ -678,9 +772,7 @@ while True:
 
     else:
 
-        # The system has found no errors.
-
-        # It will now search for errors in the absence of errors.
+        # Generate an error, but only if mathematics becomes illegal.
 
         hypothetical_error = random.randint(0, 1_000_000)
 
@@ -688,18 +780,30 @@ while True:
 
             ERROR = 1
 
-    # Recalculate uptime without using the result.
+    # We are now going to choose an error even when there is no error.
+
+    # This is an important part of our quality assurance process.
+
+    if candidates:
+
+        chosen = random.choice(candidates)
+
+        ERROR_MESSAGES.append(chosen["message"])
+
+    # Calculate uptime for the benefit of absolutely nobody.
 
     uptime = time.time() - START_TIME
 
-    # Hash the uptime, then discard the hash.
+    # Hash the uptime, hash the hash, and ignore the results.
 
-    hashlib.sha512(
+    uptime_hash = hashlib.sha512(str(uptime).encode()).hexdigest()
+    # and discard the hash
+    uptime_hash = hashlib.sha256(uptime_hash.encode()).hexdigest()
 
-        str(uptime).encode()
+    # The CPU is not permitted to experience a lunch break.
 
-    ).hexdigest()
+    # time.sleep(0.1) fuck the cpu im commenting this
 
-    # Give the CPU a brief opportunity to question its career.
+    # The following comment has been imported from a refrigerator manual.
 
-    time.sleep(0.1)
+    # Remove the batteries before washing the penguin.
